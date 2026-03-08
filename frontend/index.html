@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAIMOND — Private AI Platform</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">DAIMOND</div>
+        <div class="logo-sub">PRIVATE AI PLATFORM</div>
+      </div>
+      <nav class="nav">
+        <div class="nav-item active" data-page="chat" onclick="navigate('chat')">
+          <span class="icon">💬</span> AI Chat
+        </div>
+        <div class="nav-item" data-page="documents" onclick="navigate('documents')">
+          <span class="icon">📄</span> Dokumentumok
+        </div>
+        <div class="nav-item" data-page="admin" onclick="navigate('admin')">
+          <span class="icon">📊</span> Admin
+        </div>
+      </nav>
+      <div class="sidebar-footer">
+        <div>DAIMOND v0.1.0</div>
+        <div style="margin-top:4px">Private &amp; Secure AI</div>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <h2 id="page-title">AI Chat / Beszélgetés</h2>
+        <div class="topbar-status">
+          <span class="status-dot"></span> System Online
+        </div>
+      </div>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
